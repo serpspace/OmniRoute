@@ -1,0 +1,1 @@
+- Clear the `release/v3.8.51` base-red reported by #12732: drop the three `as any` casts in `tests/unit/volcengine-plan-binding-upsert.test.ts` (`__testing` already exports a typed `upsertConnection`), which tripped `no-explicit-any` (an error in `tests/`) on the tip.
